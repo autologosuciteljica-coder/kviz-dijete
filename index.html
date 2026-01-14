@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test – koji je tip učenika moje dijete?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container" id="test">
+  <h1>Test: koji je tip učenika moje dijete?</h1>
+
+  <div class="question">
+    <p>1. Moje dijete lakše uči uz slike.</p>
+    <label><input type="radio" name="q1" value="2"> Uvijek</label>
+    <label><input type="radio" name="q1" value="1"> Katkad</label>
+    <label><input type="radio" name="q1" value="0"> Nikad</label>
+  </div>
+
+  <!-- EMAIL -->
+  <input type="email" id="email" placeholder="Upišite e-mail adresu" required />
+
+  <label class="consent">
+    <input type="checkbox" id="consent" />
+    Slažem se s obradom podataka u informativne svrhe.
+  </label>
+
+  <button onclick="calculate()">Prikaži rezultat</button>
+</div>
+
+<div class="container hidden" id="result">
+  <h2>Rezultat</h2>
+  <p id="resultText"></p>
+  <button onclick="restart()">Ponovno ispuni test</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
