@@ -10,20 +10,19 @@
 
 <div class="container" id="test">
   <h1>Test: koji je tip učenika moje dijete?</h1>
+  <p class="subtitle">Kratki informativni test za roditelje djece osnovnoškolske dobi.</p>
+  
+  <div id="questions"></div>
 
-  <div class="question">
-    <p>1. Moje dijete lakše uči uz slike.</p>
-    <label><input type="radio" name="q1" value="2"> Uvijek</label>
-    <label><input type="radio" name="q1" value="1"> Katkad</label>
-    <label><input type="radio" name="q1" value="0"> Nikad</label>
-  </div>
-
-  <!-- EMAIL -->
+  <!-- EMAIL I CONSENT -->
   <input type="email" id="email" placeholder="Upišite e-mail adresu" required />
 
   <label class="consent">
     <input type="checkbox" id="consent" />
-    Slažem se s obradom podataka u informativne svrhe.
+    <label class="consent">
+  <input type="checkbox" id="consent" />
+  Slažem se da Logos učiteljica koristi moje podatke u informativne i marketinške svrhe, uključujući slanje newslettera i obavijesti o programima. Mogu odustati u bilo kojem trenutku.
+</label>
   </label>
 
   <button onclick="calculate()">Prikaži rezultat</button>
@@ -31,7 +30,19 @@
 
 <div class="container hidden" id="result">
   <h2>Rezultat</h2>
-  <p id="resultText"></p>
+  <div id="resultContent"></div>
+  
+  <div class="cta-box">
+    <p>
+      Logos učiteljica radi po jedinstvenom programu koji se temelji na četiri segmenta
+      koja su važna za postizanje školskog uspjeha: koncentraciji, organizaciji,
+      motivaciji te svladavanju tehnika učenja – mentalnih mapa i mnemotehnika.
+    </p>
+    <a href="https://www.logosuciteljica.hr/personalizirani-paketi/" target="_blank" class="cta-button">
+      POGLEDAJTE NAŠE PROGRAME
+    </a>
+  </div>
+
   <button onclick="restart()">Ponovno ispuni test</button>
 </div>
 
